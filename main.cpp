@@ -25,7 +25,6 @@ int main() {
     std::cin.ignore();
     for (int i = 0; i < m; i++) {
         std::getline(std::cin, query);
-        //std::cout << "query = " << query << std::endl;
         if (query.length() < 3) {
             std::cout << "Error\n";
             i--;
@@ -40,8 +39,6 @@ int main() {
                 x += (int)(query[i] - '0') * q;
                 q *= 10;
             }
-            //std::cout << "x = " << x << std::endl;
-            //std::cout << "y = " << y << std::endl;
             if (y == '1') {
                 robots.resize(robots.size() + 1);
                 robots[robots.size() - 1] = x;
